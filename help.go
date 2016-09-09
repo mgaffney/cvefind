@@ -29,13 +29,13 @@ Use the '-H' option to output a Header in the first row.
 
 EXAMPLES
 List of all CVEs newly reported or modified in the last eight days:
-	cvefind -l | cvefind
+    cvefind -l | cvefind
 
 List of all CVEs newly reported in the last eight days:
-	cvefind -l | cvefind -n
+    cvefind -l | cvefind -n
 
 List of all CVEs ever reported (don't do this):
-	cvefind -l | cvefind -a
+    cvefind -l | cvefind -a
 
 TERMS
  * CPE  - Common Platform Enumeration
@@ -61,7 +61,8 @@ URLs
      https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-2013.xml.gz
      https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-2014.xml.gz
      https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-2015.xml.gz
-     plus one for each year after 2015 up to the current year
+     https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-2016.xml.gz
+     plus one for each year after 2016 up to the current year
 
 MORE INFO
 See https://nvd.nist.gov/download.cfm for more information.

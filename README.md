@@ -89,7 +89,8 @@ The URLs used per command line option:
 * https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-2013.xml.gz
 * https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-2014.xml.gz
 * https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-2015.xml.gz
-* plus one for each year after 2015 up to the current year
+* https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-2016.xml.gz
+* plus one for each year after 2016 up to the current year
 
 ## More Info
 
