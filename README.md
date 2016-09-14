@@ -4,17 +4,17 @@ cvefind finds CVEs for a list of products. Output is in CSV format.
 
 ## Examples
 
-List of all CVEs for Ruby on Rails newly reported or modified in the last eight days:
+List all CVEs for Ruby on Rails newly reported or modified in the last eight days:
 ```
 	cvefind -l | grep "[Rr]uby on [Rr]ails" | cvefind
 ```
 
-List of all CVEs for Ruby on Rails newly reported in the last eight days:
+List all CVEs for Ruby on Rails newly reported in the last eight days:
 ```
 	cvefind -l | grep "[Rr]uby on [Rr]ails" | cvefind -n
 ```
 
-List of all CVEs for Ruby on Rails ever reported:
+List all CVEs for Ruby on Rails ever reported:
 ```
 	cvefind -l | grep "[Rr]uby on [Rr]ails" | cvefind -a
 ```
