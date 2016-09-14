@@ -2,6 +2,45 @@
 
 cvefind finds CVEs for a list of products. Output is in CSV format.
 
+## Examples
+
+List of all CVEs for Ruby on Rails newly reported or modified in the last eight days:
+```
+	cvefind -l | grep "[Rr]uby on [Rr]ails" | cvefind
+```
+
+List of all CVEs for Ruby on Rails newly reported in the last eight days:
+```
+	cvefind -l | grep "[Rr]uby on [Rr]ails" | cvefind -n
+```
+
+List of all CVEs for Ruby on Rails ever reported:
+```
+	cvefind -l | grep "[Rr]uby on [Rr]ails" | cvefind -a
+```
+
+Create a file with a list of products you want to monitor for CVEs on a
+regular basis:
+```
+	cvefind -l | grep "[Rr]uby on [Rr]ails" > project-deps.txt
+	cvefind -l | grep "[Gg]rails" >> project-deps.txt
+```
+
+Use the above file to find all CVEs ever reported for the products you
+want to monitor:
+```
+	cvefind -a project-deps.txt > cve-list.csv
+```
+
+After the initial check, you can look for only newly reported CVEs as
+part of a daily job:
+```
+	cvefind project-deps.txt > newly-reported-cve-list.csv
+```
+
+The output of `cvefind -l` can be edited in any text editor to further
+refine the list of products you want to monitor.
+
 ## Building it
 
 1. Install [go](http://golang.org/doc/install)
@@ -36,23 +75,6 @@ CSV format with the following columns:
  * Summary - Description of the CVE
 
 Use the `-H` option to output a Header in the first row.
-
-## Examples
-
-List of all CVEs newly reported or modified in the last eight days:
-```
-	cvefind -l | cvefind
-```
-
-List of all CVEs newly reported in the last eight days:
-```
-	cvefind -l | cvefind -n
-```
-
-List of all CVEs ever reported (don't do this):
-```
-	cvefind -l | cvefind -a
-```
 
 ## Terms
 
