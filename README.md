@@ -63,6 +63,16 @@ then text. All text after the whitespace until the EOL is the Product
 Name. The ID is a CPE 2.2 URN. You can use `cvefind -l` to create the
 input file.
 
+### Example input file:
+
+	cpe:/a:apache:tomcat:8.5.2                       Apache Software Foundation Tomcat 8.5.2
+	cpe:/a:oracle:jdk:1.8.0:update_77                Oracle JDK 1.8.0 Update 77
+	cpe:/a:oracle:jre:1.8.0:update_77                Oracle JRE 1.8.0 Update 77
+	cpe:/a:vmware:springsource_spring_security:3.1.3 VMware SpringSource Spring Security 3.1.3
+	cpe:/a:pivotal_software:spring_framework:4.1.2   Pivotal Software Spring Framework 4.1.2
+	cpe:/a:shibboleth:shibboleth-sp:2.4.3            Shibboleth Service Provider Software 2.4.3
+	cpe:/a:forgerock:openam:11.0.2                   ForgeRock OpenAM 11.0.2
+
 ## Output
 
 CSV format with the following columns:
